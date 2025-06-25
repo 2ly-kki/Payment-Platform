@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
+  <body class="bg-light" style="min-height:1500px;">
+    
+    <div class="container">
+        <div class="py-5 text-center">
+            <img class="mb-4 d-block mx-auto" src="/Images/new_maviance_logo.png" alt="Maviance Logo " width="200">
+             <h2>Checkout Form</h2>
+    <p class="lead">Below is and example from build entirely from bootstrap</p>
+        </div>
+
+         <div class="container">
+        <h4 class="mb-3">Billing Address</h4>
+        <form novalidate>
+              <div class="row g-3">
+                    <div class="col-sm-6">
+                        <label for="firstname" class="form-label">First Name</label>
+                        <input id="firstname" type="text" class="form-control" placeholder="Mapalo">
+                        <div class="invalid-feedback">
+                            Valid first name is required.
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="lastname" class="form-label">Last Name</label>
+                        <input id="lastname" type="text" class="form-control" placeholder="Banda">
+                        <div class="invalid-feedback">
+                            Valid Last name is required.
+                        </div>
+                    </div>
+                    <div class="col-12"> 
+                        <label for="username" class="form-label" >Username</label>
+                        <div class="input-group">
+                            <span class="input-group-text">@</span>
+                            <input id="username" type="text" class="form-control" placeholder="mbanda">
+                        </div>
+                        <div class="invalid-feedback">
+                            Valid Username is required.
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <label for="country" class="form-label" >Country</label>
+                        <select id="country" class="form-control">
+                            <option value="">Choose...</option>
+                            <option value="Cameroon">Cameroon</option>
+                            <option value="Chad">Chad</option>
+                            <option value="Burkina Faso">Burkina Faso</option>
+                            <option value="Congo">Congo</option>
+                            <option value="Gabon">Gabon</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Valid Country name is required.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="City" class="form-label" >City</label>
+                        <select id="City" class="form-control">
+                            <option value="">Choose...</option>
+                            <option value="Duoala">Douala</option>
+                            <option value="Yaounde">Yaounde</option>
+                            <option value="Porto-Novo">Porto-Novo</option>
+                            <option value="N'Djamena">N'Djamena</option>
+                            <option value="Libreville">Libreville</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Valid State name is required.
+                        </div>
+                    </div>
+                    <div class="col-md-3"> 
+                        <label for="postcode" class="form-label" >Postcode</label>
+                        <div class="input-group">
+                            <span class="input-group-text">@</span>
+                            <input id="1234" type="number" class="form-control" placeholder="1234">
+                        </div>
+                        <div class="invalid-feedback">
+                            Valid postcode is required
+                        </div>
+                    </div>
+                    <hr class="my-4">
+
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input id="sameAddress" type="checkbox" class="form-check-input">
+                            <label class="form-check-label" for="sameAddress">shipping address is the same as the billing address</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="save this info" type="checkbox" class="form-check-input">
+                            <label class="form-check-label" for="sameAddress">Save your info</label>
+                        </div> 
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h4 class="mb-3">Payments</h4>
+
+                    <div class="form-check">
+                        <input id="creditCard" name="paymenetMethod" type="radio" class="form-check-input" checked required >
+                        <label for="creditCard">Credit Card</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input id="directDebit"  name="paymenetMethod" type="radio" class="form-check-input" checked required >
+                        <label for="directDebit">Direct Debit</label>
+                    </div>
+
+                    <div class="row my-3 gy-3">
+                        <div class="col-md-6">
+                            <label for="fullName" class="form-label">
+                                Name on card
+                            </label>
+                            <input id="fullName" type="text" class="form-control">
+                            <small class="text-muted">
+                                Full Name as displayed on credit card.
+                            </small>
+                            <div class="invalid-feedback">
+                                Name on card is required
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="cc-number" class="form-label">
+                                Credit Card Number
+                            </label>
+                            <input type="text" class="form-control">
+                            <div class="invalid-feedback">
+                                Credit card number is required
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="cc-expire" class="form-label">
+                                Expiration
+                            </label>
+                            <input type="text" class="form-control">
+                            <div class="invalid-feedback">
+                                Expiration is required
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="cc-cvv" class="form-label">
+                                CVV
+                            </label>
+                            <input type="text" class="form-control">
+                            <div class="invalid-feedback">
+                                CVV is required
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <button class="btn btn-primary btn-lg btn-block"> Continue to Checkout</button>
+
+              </div>      
+        </form>
+        </div> 
+
+        
+    </div> 
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>   
